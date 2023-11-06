@@ -2,32 +2,36 @@ package main
 
 import (
 	"fmt"
-	"os"
+	// "os"
 )
 
-func checkError(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
+// func checkError(e error) {
+// 	if e != nil {
+// 		panic(e)
+// 	}
+// }
 
 func main() {
-	count := 34
-	dir := "natas"
-	fileName := "README"
-	extention := "md"
+	// dont uncomment it.
 
-	for i := 1; i < count+1; i++ {
-		dirName := fmt.Sprint(dir, i)
-		os.Mkdir(dirName, 0777)
+	// count := 34
+	// dir := "natas"
+	// fileName := "README"
+	// extention := "md"
 
-		f, err := os.Create(fmt.Sprintf("./%v/%v.%v", dirName, fileName, extention))
-		checkError(err)
+	// for i := 1; i < count+1; i++ {
+	// 	dirName := fmt.Sprint(dir, i)
+	// 	os.Mkdir(dirName, 0777)
 
-		_, err = f.Write([]byte(fmt.Sprintf("# %v", dirName)))
-		checkError(err)
+	// 	f, err := os.Create(fmt.Sprintf("./%v/%v.%v", dirName, fileName, extention))
+	// 	checkError(err)
 
-		fmt.Println("new file created")
-		defer f.Close()
-	}
+	// 	_, err = f.Write([]byte(fmt.Sprintf("# %v", dirName)))
+	// 	checkError(err)
+
+	// 	fmt.Println("new file created")
+	// 	defer f.Close()
+	// }
+
+	fmt.Println("natas")
 }
